@@ -1,0 +1,31 @@
+
+body{
+    background-color: rgb(214, 242, 242);
+}
+
+.htaccess-content{
+    background-color: white;
+    border: 1px solid black;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+.update-buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+
+button{
+    margin-right: 5px;
+    background-color: blueviolet;
+    color: #ddd;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.center-items{
+    text-align: center;
+    width: 100%;
+}
