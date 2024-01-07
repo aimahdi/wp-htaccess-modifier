@@ -21,8 +21,10 @@
     </h3>
 
     <div class="htaccess-content"  id="htaccessDiv">
+        
         <?php if(empty($content)): ?>
             <?= 'No Custom Rules Set' ?>
+           
         <?php else: ?>
        <?=  $content ?>
        <?php endif ?>
@@ -30,14 +32,12 @@
     </div>
     <br>
 
-    <div class="update-buttons">
-        <button id='clearButton'>Clear</button>
+<?php endif ?>
+<div class="update-buttons">
+        <button id='clearButton'>Delete File</button>
         <button id='replaceWithDefault'>Replace with default</button>
         <button id='updateCustomRule'>Update Custom Rule</button>
     </div>
-
-
-<?php endif ?>
     
 </body>
 </html>

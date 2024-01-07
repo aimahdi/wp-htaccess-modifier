@@ -54,10 +54,11 @@ $htaccessPath = dirname($wpConfigPath) . '/.htaccess';
     //$file_path = '/path/to/your/file.txt'; // Update with the actual path to your file
 
     // Your logic to update the file content goes here
-    $new_content = 'No Custom Rules Set'; // Replace with your desired content
+    $new_content = ''; // Replace with your desired content
 
     // Update the file content
-    $result = file_put_contents($htaccessPath, $new_content);
+   // $result = file_put_contents($htaccessPath, $new_content);
+    $result = unlink($htaccessPath);
 
     // Return a response based on the result
     if ($result !== false) {

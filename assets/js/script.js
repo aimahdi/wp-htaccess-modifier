@@ -37,7 +37,7 @@ function callClearData(){
     })
     .then(function(data) {
         // Handle the server response
-        htaccessConent.innerHTML = 'No Custom Rules Set';
+        window.location.reload();
         alert('Server response: ' + data);
         
     })
@@ -58,18 +58,7 @@ function callUpdateData(){
     })
     .then(function(data) {
         // Handle the server response
-        htaccessConent.innerHTML = `
-        # BEGIN WordPress <br>
-    <IfModule mod_rewrite.c> <br>
-    RewriteEngine On <br>
-    RewriteBase / <br>
-    RewriteRule ^index\.php$ - [L] <br>
-    RewriteCond %{REQUEST_FILENAME} !-f <br>
-    RewriteCond %{REQUEST_FILENAME} !-d <br>
-    RewriteRule . /index.php [L] <br>
-    </IfModule> <br>
-    # END WordPress <br>
-        `.trim();
+        window.location.reload();
         alert('Server response: ' + data);
         
     })
